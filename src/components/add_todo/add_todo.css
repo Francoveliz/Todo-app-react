@@ -1,0 +1,92 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align_items_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.space_between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.global_margin {
+  margin: 0 1.2rem !important;
+}
+
+.margin_b_2 {
+  margin-bottom: 2rem;
+}
+
+.icon_uncheck {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #777a92;
+  min-width: 1.4rem;
+  min-height: 1.4rem;
+  border-radius: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.icon_check {
+  width: 1.4rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media (min-width: 1024px) {
+  .global_margin {
+    margin: 0 30% !important;
+  }
+}
+
+.add_todo {
+  background-color: #25273c;
+  height: 2.5rem;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.add_todo input {
+  background-color: #25273c;
+  border: none;
+  outline: none;
+  color: #cacde8;
+  margin-left: 1rem;
+}
+
+.add_todo input::-webkit-input-placeholder {
+  color: #4d5066;
+}
+
+.add_todo input:-ms-input-placeholder {
+  color: #4d5066;
+}
+
+.add_todo input::-ms-input-placeholder {
+  color: #4d5066;
+}
+
+.add_todo input::placeholder {
+  color: #4d5066;
+}
+/*# sourceMappingURL=add_todo.css.map */

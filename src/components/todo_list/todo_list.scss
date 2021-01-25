@@ -1,0 +1,24 @@
+@import "../../assets/scss/globals";
+@import "../../assets/scss/variables";
+
+.todo_list {
+ margin-top: 1rem;
+ border-radius: $border_radius;
+ margin-bottom: 1rem;
+
+
+ &>* {
+  border-bottom: .5px solid $dark_grayish_blue;
+
+ }
+
+ &>:first-child {
+  border-radius: $border_radius $border_radius 0 0;
+ }
+
+ &>:last-child {
+  border-bottom: none;
+  border-radius: 0 0 $border_radius $border_radius;
+ }
+
+}

@@ -1,0 +1,20 @@
+@import "../../assets/scss/globals";
+@import "../../assets/scss/variables";
+
+.filters {
+ color: $very_dark_grayish_blue;
+ background: $very_dark_desaturated_blue;
+ padding: 0 1.2rem;
+ justify-content: center;
+ height: 3rem;
+
+ button {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+  padding: 0;
+  margin: 0 .7rem;
+  font-weight: bold;
+ }
+}

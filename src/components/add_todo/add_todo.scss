@@ -1,0 +1,29 @@
+@import "../../assets/scss/globals";
+@import "../../assets/scss/variables";
+
+.add_todo {
+ background-color: $very_dark_desaturated_blue;
+ height: 2.5rem;
+ border-radius: $border_radius;
+ display: flex;
+ align-items: center;
+ padding: 0 1.2rem;
+ margin-bottom: 2rem;
+
+
+
+
+ input {
+  background-color: $very_dark_desaturated_blue;
+  border: none;
+  outline: none;
+  color: $light_grayish_blue;
+  margin-left: 1rem;
+
+  &::placeholder {
+   color: $very_dark_grayish_blue;
+  }
+ }
+
+
+}

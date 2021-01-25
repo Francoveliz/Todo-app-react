@@ -1,0 +1,42 @@
+@import "./variables";
+
+.flex {
+ display: flex;
+}
+
+.align_items_center {
+ align-items: center;
+}
+
+.space_between {
+ justify-content: space-between;
+}
+
+.global_margin {
+ margin: 0 $mobile_padding !important;
+}
+
+.margin_b_2 {
+ margin-bottom: 2rem;
+}
+
+.icon_uncheck {
+ display: block;
+ box-sizing: border-box;
+ border: 1px solid $dark_grayish_blue;
+ min-width: 1.4rem;
+ min-height: 1.4rem;
+ border-radius: 50%;
+ user-select: none;
+}
+
+.icon_check {
+ width: 1.4rem;
+ user-select: none;
+}
+
+@media (min-width:1024px) {
+ .global_margin {
+  margin: 0 $desktop_padding !important;
+ }
+}
