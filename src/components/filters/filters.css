@@ -46,6 +46,10 @@
           user-select: none;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media (min-width: 1024px) {
   .global_margin {
     margin: 0 30% !important;
@@ -60,6 +64,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 3rem;
+  border-radius: 5px;
 }
 
 .filters button {

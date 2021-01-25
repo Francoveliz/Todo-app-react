@@ -31,7 +31,7 @@ const AddTodo = () => {
    }
    <form onSubmit={submitHandler}>
     <input type="text" value={todoText} onChange={todoTextHandler} placeholder="Create a new todo" className="input_text" />
-    <input type="submit" style={{ display: "none" }} />
+    <input type="submit" className="hidden" />
    </form>
   </div>
  )

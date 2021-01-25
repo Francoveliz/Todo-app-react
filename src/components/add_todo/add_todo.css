@@ -46,6 +46,10 @@
           user-select: none;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media (min-width: 1024px) {
   .global_margin {
     margin: 0 30% !important;
@@ -66,7 +70,7 @@
   margin-bottom: 2rem;
 }
 
-.add_todo input {
+.add_todo .input_text {
   background-color: #25273c;
   border: none;
   outline: none;
@@ -74,19 +78,19 @@
   margin-left: 1rem;
 }
 
-.add_todo input::-webkit-input-placeholder {
+.add_todo .input_text::-webkit-input-placeholder {
   color: #4d5066;
 }
 
-.add_todo input:-ms-input-placeholder {
+.add_todo .input_text:-ms-input-placeholder {
   color: #4d5066;
 }
 
-.add_todo input::-ms-input-placeholder {
+.add_todo .input_text::-ms-input-placeholder {
   color: #4d5066;
 }
 
-.add_todo input::placeholder {
+.add_todo .input_text::placeholder {
   color: #4d5066;
 }
 /*# sourceMappingURL=add_todo.css.map */
