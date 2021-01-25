@@ -19,12 +19,20 @@ const AddTodo = () => {
   setTodoText("")
  }
 
+ const submitHandler = e => {
+  e.preventDefault()
+  addTodo()
+ }
+
  return (
   <div className="add_todo global_margin">
    {
     todoText !== "" ? <img src={iconCheck} className="icon_check" onClick={addTodo} /> : <div className="icon_uncheck" />
    }
-   <input type="text" value={todoText} onChange={todoTextHandler} placeholder="Create a new todo" />
+   <form onSubmit={submitHandler}>
+    <input type="text" value={todoText} onChange={todoTextHandler} placeholder="Create a new todo" className="input_text" />
+    <input type="submit" style={{ display: "none" }} />
+   </form>
   </div>
  )
 }
