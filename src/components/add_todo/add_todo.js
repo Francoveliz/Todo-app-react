@@ -29,7 +29,7 @@ const AddTodo = () => {
    {
     todoText !== "" ? <img src={iconCheck} className="icon_check" onClick={addTodo} /> : <div className="icon_uncheck" />
    }
-   <form onSubmit={submitHandler}>
+   <form onSubmit={submitHandler} className="add-todo__form">
     <input type="text" value={todoText} onChange={todoTextHandler} placeholder="Create a new todo" className="input_text" />
     <input type="submit" className="hidden" />
    </form>
