@@ -1,8 +1,9 @@
 @import "../../assets/scss/globals";
 @import "../../assets/scss/variables";
 
+
 .add_todo {
- background-color: $very_dark_desaturated_blue;
+ background-color: var(--bg-todo);
  height: 2.5rem;
  border-radius: $border_radius;
  display: flex;
@@ -11,14 +12,15 @@
  margin-bottom: 2rem;
 
  .input_text {
-  background-color: $very_dark_desaturated_blue;
+  width: 100% !important;
+  background-color: var(--bg-todo);
   border: none;
   outline: none;
-  color: $light_grayish_blue;
+  color: var(--font-color);
   margin-left: 1rem;
 
   &::placeholder {
-   color: $very_dark_grayish_blue;
+   color: var(--muted);
   }
  }
 }

@@ -1,29 +1,82 @@
-import React,{createContext,useState,useEffect} from 'react'
+import React, {
+   createContext,
+   useState,
+   useEffect
+} from 'react'
 
 export const TodosContext = createContext()
 
-export const TodosProvider = ({ children }) => {
- const [todos, setTodos] = useState([])
- const [todosDisplay,setTodosDisplay] = useState([])
+export const TodosProvider = ({
+   children
+}) => {
+   const [todos, setTodos] = useState([{
+      todoContent: "Ir al gymnasio",
+      id: 1,
+      isCheck: false
+   },
+   {
+      todoContent: "Hacer las compras",
+      id: 2,
+      isCheck: false
+   },
+   {
+      todoContent: "llamar al electricista",
+      id: 3,
+      isCheck: true
+   },
+   {
+      todoContent: "Ir al médico",
+      id: 4,
+      isCheck: false
+   },
+   {
+      todoContent: "Sacar turno para el dentista",
+      id: 5,
+      isCheck: true
+   },
+   {
+      todoContent: "Hacer el desayuno",
+      id: 6,
+      isCheck: true
+   },
+   {
+      todoContent: "Llamar a Julia",
+      id: 7,
+      isCheck: false
+   },
+   ])
 
- const allFilter = () => {
-  setTodosDisplay([...todos])
- }
+   const [todosDisplay, setTodosDisplay] = useState([])
 
- const activeFilter = () => {
-  setTodosDisplay(todos.filter(el => el.isCheck === false))
- }
+   const allFilter = () => {
+      setTodosDisplay([...todos])
+   }
 
- const completedFilter = () => {
-    setTodosDisplay(todos.filter(el => el.isCheck === true))
- }
- 
- useEffect(() => {
-  setTodosDisplay([...todos])
- }, [todos])
+   const activeFilter = () => {
+      setTodosDisplay(todos.filter(el => el.isCheck === false))
+   }
 
- return (
-  <TodosContext.Provider value={{todos,setTodos,todosDisplay,allFilter,activeFilter,completedFilter}}>
-   {children}
-  </TodosContext.Provider>
- )}
+   const completedFilter = () => {
+      setTodosDisplay(todos.filter(el => el.isCheck === true))
+   }
+
+   useEffect(() => {
+      setTodosDisplay([...todos])
+   }, [todos])
+
+   return (<
+      TodosContext.Provider value={
+         {
+            todos,
+            setTodos,
+            todosDisplay,
+            allFilter,
+            activeFilter,
+            completedFilter
+         }
+      } > {
+         children
+      } <
+      /TodosContext.Provider>
+   )
+}

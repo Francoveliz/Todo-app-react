@@ -6,7 +6,7 @@
  display: flex;
  align-items: center;
  //codigo que coincide con add_todo
- background-color: $very_dark_desaturated_blue;
+ background-color: var(--bg-todo);
  height: 3rem;
  padding: 0 1.2rem;
 }
@@ -14,8 +14,7 @@
 
 .crossed_text {
  text-decoration: line-through;
- color: $very_dark_grayish_blue !important;
-
+ color: var(--muted) !important;
 }
 
 .icon_cross {
@@ -23,10 +22,11 @@
  height: .9rem;
  margin-right: 0;
  margin-left: auto;
+ cursor: pointer;
 }
 
 
 .todo_text {
  margin: 0 1rem;
- color: #fff;
+ color: var(--font-color);
 }

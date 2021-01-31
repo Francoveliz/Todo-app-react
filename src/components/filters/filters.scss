@@ -2,12 +2,16 @@
 @import "../../assets/scss/variables";
 
 .filters {
- color: $very_dark_grayish_blue;
- background: $very_dark_desaturated_blue;
- padding: 0 1.2rem;
+ color: var(--muted);
+ background: var(--bg-todo);
  justify-content: center;
  height: 3rem;
  border-radius: $border_radius;
+ position: absolute;
+ top: 4.2rem;
+ left: 0;
+ margin: 0;
+ width: 100%;
 
  button {
   border: none;
@@ -17,5 +21,16 @@
   padding: 0;
   margin: 0 .7rem;
   font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+   color: var(--hover);
+  }
+ }
+}
+
+@media (min-width:1024px) {
+ .filters {
+  position: static;
  }
 }

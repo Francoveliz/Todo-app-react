@@ -28,7 +28,7 @@
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #777a92;
+  border: 1px solid var(--uncheck-icon-border);
   min-width: 1.4rem;
   min-height: 1.4rem;
   border-radius: 50%;
@@ -36,6 +36,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 
 .icon_check {
@@ -44,6 +45,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 
 .hidden {
@@ -52,12 +54,15 @@
 
 @media (min-width: 1024px) {
   .global_margin {
-    margin: 0 30% !important;
+    margin: 0 25% !important;
+  }
+  :root {
+    font-size: 16px;
   }
 }
 
 .add_todo {
-  background-color: #25273c;
+  background-color: var(--bg-todo);
   height: 2.5rem;
   border-radius: 5px;
   display: -webkit-box;
@@ -71,26 +76,27 @@
 }
 
 .add_todo .input_text {
-  background-color: #25273c;
+  width: 100% !important;
+  background-color: var(--bg-todo);
   border: none;
   outline: none;
-  color: #cacde8;
+  color: var(--font-color);
   margin-left: 1rem;
 }
 
 .add_todo .input_text::-webkit-input-placeholder {
-  color: #4d5066;
+  color: var(--muted);
 }
 
 .add_todo .input_text:-ms-input-placeholder {
-  color: #4d5066;
+  color: var(--muted);
 }
 
 .add_todo .input_text::-ms-input-placeholder {
-  color: #4d5066;
+  color: var(--muted);
 }
 
 .add_todo .input_text::placeholder {
-  color: #4d5066;
+  color: var(--muted);
 }
 /*# sourceMappingURL=add_todo.css.map */

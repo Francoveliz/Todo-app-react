@@ -1,5 +1,5 @@
 .header {
- background-image: url("../../assets/images/bg-mobile-dark.jpg");
+ background-image: var(--header-img-mobile);
  background-size: cover;
  height: 12.3rem;
  width: 100%;
@@ -10,6 +10,6 @@
 
 @media (min-width:1024px) {
  .header {
-  background-image: url("../../assets/images/bg-desktop-dark.jpg");
+  background-image: var(--header-img-desktop);
  }
 }

@@ -28,7 +28,7 @@
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #777a92;
+  border: 1px solid var(--uncheck-icon-border);
   min-width: 1.4rem;
   min-height: 1.4rem;
   border-radius: 50%;
@@ -36,6 +36,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 
 .icon_check {
@@ -44,6 +45,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 
 .hidden {
@@ -52,14 +54,17 @@
 
 @media (min-width: 1024px) {
   .global_margin {
-    margin: 0 30% !important;
+    margin: 0 25% !important;
+  }
+  :root {
+    font-size: 16px;
   }
 }
 
 .app {
-  background-color: #161722;
+  background-color: var(--bg-app);
   height: 100%;
   min-height: 100vh;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,17 @@
+html {
+ --muted: hsl(233, 14%, 35%);
+ --bg-todo: hsl(235, 24%, 19%);
+ --font-color: hsl(234, 39%, 85%);
+ --bg-app: hsl(235, 86%, 78%);
+ --uncheck-icon-border: hsl(234, 11%, 52%);
+ --hover: hsl(204, 70%, 53%);
+ --header-img-desktop: "../../assets/images/bg-mobile-dark.jpg";
+}
+
+html {
+ VeryLightGray: hsl(0, 0%, 98%);
+ VeryLightGrayishBlue: hsl(236, 33%, 92%);
+ LightGrayishBlue: hsl(233, 11%, 84%);
+ DarkGrayishBlue: hsl(236, 9%, 61%);
+ VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+}

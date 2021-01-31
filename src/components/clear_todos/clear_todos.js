@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { TodosContext } from "../../context/todos_context"
+import Filters from "../filters/filters"
 import "./clear_todos.css"
 
 function ClearTodos() {
@@ -15,6 +16,7 @@ function ClearTodos() {
  return (
   <div className="clear_todos flex space_between global_margin">
    <p>{`${itemsLeft} items left`}</p>
+   <Filters />
    <button onClick={clearCompleted}>Clear Completed</button>
   </div>
  )
